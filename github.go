@@ -273,6 +273,13 @@ func (m *GithubClient) GetPullRequest(prNumber, commitRef string) (*PullRequest,
 						}
 					}
 				} `graphql:"commits(last:$commitsLast)"`
+				Files struct {
+					Edges []struct {
+						Node struct {
+							FilesChangedObject
+						}
+					}
+				} `graphql:"files(last:$commitsLast)"`
 			} `graphql:"pullRequest(number:$prNumber)"`
 		} `graphql:"repository(owner:$repositoryOwner,name:$repositoryName)"`
 	}
