@@ -191,7 +191,6 @@ func TestGet(t *testing.T) {
 				if tc.filesString != "" {
 					changedFiles := readTestFile(t, filepath.Join(dir, ".git", "resource", "changed_files"))
 					assert.Equal(t, tc.filesString, changedFiles)
-
 				}
 			}
 
