@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
+	resource "github.com/holger-wg2/github-pr-resource"
+	"github.com/holger-wg2/github-pr-resource/fakes"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	resource "github.com/telia-oss/github-pr-resource"
-	"github.com/telia-oss/github-pr-resource/fakes"
 )
 
 func TestPut(t *testing.T) {

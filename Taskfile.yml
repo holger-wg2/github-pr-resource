@@ -5,7 +5,7 @@ env:
 
 vars:
   BUILD_DIR: build
-  DOCKER_REPO: teliaoss/github-pr-resource
+  DOCKER_REPO: holger-wg2/github-pr-resource
 
 tasks:
   default:

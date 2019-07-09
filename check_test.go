@@ -3,9 +3,9 @@ package resource_test
 import (
 	"testing"
 
+	resource "github.com/holger-wg2/github-pr-resource"
+	"github.com/holger-wg2/github-pr-resource/fakes"
 	"github.com/stretchr/testify/assert"
-	resource "github.com/telia-oss/github-pr-resource"
-	"github.com/telia-oss/github-pr-resource/fakes"
 )
 
 var (
