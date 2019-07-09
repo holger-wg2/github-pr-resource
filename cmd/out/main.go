@@ -2,10 +2,10 @@ package main
 
 import (
 	"encoding/json"
+	resource "github.com/holger-wg2/github-pr-resource"
 	"log"
 	"os"
 
-	"github.com/telia-oss/github-pr-resource"
 )
 
 func main() {
