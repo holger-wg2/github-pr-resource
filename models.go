@@ -109,17 +109,5 @@ type CommitObject struct {
 // https://developer.github.com/v4/object/pullrequestchangedfile/
 type ChangedFileObject struct {
 	Path string
-<<<<<<< HEAD
-}
-=======
 }
 
-// PageInfoObject represents the GraphQL PageInfo Object.
-// https://developer.github.com/v4/object/pageinfo/
-type PageInfoObject struct {
-	StartCursor string
-	HasPreviousPage bool
-	HasNextPage bool
-	EndCursor   string
-}
->>>>>>> Add Query for Changed Files in PR
