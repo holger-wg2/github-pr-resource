@@ -278,7 +278,7 @@ func (m *GithubClient) GetPullRequest(prNumber, commitRef string, changedFileQue
 				Files struct {
 					Edges []struct {
 						Node struct {
-							FilesChangedObject
+							ChangedFileObject
 						}
 					}
 				} `graphql:"files(last:$commitsLast)"`
